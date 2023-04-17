@@ -36,10 +36,10 @@ if __name__ == "__main__":
 
         data = [[cell.strip() for cell in row] for row in csvreader]
         
-        for _ in range(10): # ask 10 random questions
+        for _ in range(10): 
             rand_row = random.choice(data)
-            kysymys = rand_row[0] # the question is in the first column
-            vastaus = rand_row[1] # the answer is in the second column
+            kysymys = rand_row[0] 
+            vastaus = rand_row[1] 
             vastaus_kayttajalta = input(kysymys + " ")
             tarkastus(vastaus_kayttajalta, vastaus)
         
